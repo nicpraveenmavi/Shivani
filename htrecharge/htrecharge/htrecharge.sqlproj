@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>htrecharge</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{43d18b35-5517-4e79-b36a-1f3e06b2b56e}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>htrecharge</RootNamespace>
+    <AssemblyName>htrecharge</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Latin1_General_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Functions\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\T_OTTRecharge_log.sql" />
+    <Build Include="dbo\Tables\T_Package.sql" />
+    <Build Include="dbo\Tables\T_PasswordChange_History.sql" />
+    <Build Include="dbo\Tables\T_PayoutWallet.sql" />
+    <Build Include="dbo\Tables\T_PG.sql" />
+    <Build Include="dbo\Tables\T_Pickrr_ApiLog.sql" />
+    <Build Include="dbo\Tables\T_RDMRApiLog.sql" />
+    <Build Include="dbo\Tables\T_Recharegerec.sql" />
+    <Build Include="dbo\Tables\T_Service.sql" />
+    <Build Include="dbo\Tables\T_User_Login.sql" />
+    <Build Include="dbo\Tables\T_User_Login_Log.sql" />
+    <Build Include="dbo\Tables\T_User_Role.sql" />
+    <Build Include="dbo\Tables\T_Users.sql" />
+    <Build Include="dbo\Tables\tbl_OTT_Subscription_Log.sql" />
+    <Build Include="dbo\Tables\tbl_signup_Log.sql" />
+    <Build Include="dbo\Tables\Temp_ElectricityCode.sql" />
+    <Build Include="dbo\Tables\inspay_aeps.sql" />
+    <Build Include="dbo\Tables\inspay_outlet.sql" />
+    <Build Include="dbo\Tables\M_apisouce_opcode_slab.sql" />
+    <Build Include="dbo\Tables\M_ApiSource.sql" />
+    <Build Include="dbo\Tables\M_apisource_opcode.sql" />
+    <Build Include="dbo\Tables\M_Bank.sql" />
+    <Build Include="dbo\Tables\M_Banner.sql" />
+    <Build Include="dbo\Tables\M_CashFreeResponses.sql" />
+    <Build Include="dbo\Tables\M_City.sql" />
+    <Build Include="dbo\Tables\M_Country.sql" />
+    <Build Include="dbo\Tables\M_CourierStatus.sql" />
+    <Build Include="dbo\Tables\M_ExamLanguage.sql" />
+    <Build Include="dbo\Tables\M_ExamPayType.sql" />
+    <Build Include="dbo\Tables\M_ExamQuestions.sql" />
+    <Build Include="dbo\Tables\M_ExamSet.sql" />
+    <Build Include="dbo\Tables\M_Mobile_Network_Circle.sql" />
+    <Build Include="dbo\Tables\M_Package.sql" />
+    <Build Include="dbo\Tables\M_package_commission.sql" />
+    <Build Include="dbo\Tables\M_package_commission _slab.sql" />
+    <Build Include="dbo\Tables\M_PaytmBankTransfer_ResponseStatus.sql" />
+    <Build Include="dbo\Tables\M_PaytmSetting.sql" />
+    <Build Include="dbo\Tables\M_PaytmWalletTransfer_ResponseStatus.sql" />
+    <Build Include="dbo\Tables\M_RDBankCode.sql" />
+    <Build Include="dbo\Tables\M_Service_Type_Category.sql" />
+    <Build Include="dbo\Tables\M_Service_Type_Sub_Category.sql" />
+    <Build Include="dbo\Tables\M_Sevice_Type.sql" />
+    <Build Include="dbo\Tables\M_State.sql" />
+    <Build Include="dbo\Tables\M_SystemSetting.sql" />
+    <Build Include="dbo\Tables\M_UserType.sql" />
+    <Build Include="dbo\Tables\T_aepswallet.sql" />
+    <Build Include="dbo\Tables\T_APES_Transection.sql" />
+    <Build Include="dbo\Tables\T_Api_Logs.sql" />
+    <Build Include="dbo\Tables\T_Cashfree_ApiLog.sql" />
+    <Build Include="dbo\Tables\T_CoinWallet.sql" />
+    <Build Include="dbo\Tables\T_CourierOrder.sql" />
+    <Build Include="dbo\Tables\T_CourierOrderStatus.sql" />
+    <Build Include="dbo\Tables\T_DmtService.sql" />
+    <Build Include="dbo\Tables\T_DmtServiceCallback.sql" />
+    <Build Include="dbo\Tables\T_Eko_Aeps_ApiLog.sql" />
+    <Build Include="dbo\Tables\T_Eko_Aeps_Member.sql" />
+    <Build Include="dbo\Tables\T_Eko_Aeps_Txn.sql" />
+    <Build Include="dbo\Tables\T_FundAddRequest.sql" />
+    <Build Include="dbo\Tables\T_M_CourierPickUpPoint.sql" />
+    <Build Include="dbo\Tables\T_MainWallet.sql" />
+    <Build Include="dbo\Tables\T_Member.sql" />
+    <Build Include="dbo\Tables\T_Member_Genealogy.sql" />
+    <Build Include="dbo\Tables\T_Member_Info.sql" />
+    <Build Include="dbo\Tables\T_MobileAppNotification_History.sql" />
+    <Build Include="dbo\Tables\T_Order.sql" />
+    <Build Include="dbo\Views\v_SponsorLevel.sql" />
+    <Build Include="dbo\Functions\Getcommision.sql" />
+    <Build Include="dbo\Functions\Getslabs.sql" />
+    <Build Include="dbo\Functions\fnSplitString.sql" />
+    <Build Include="dbo\Stored Procedures\SPAPI_Aeps.sql" />
+    <Build Include="dbo\Stored Procedures\SPAPI_RDRechage.sql" />
+    <Build Include="dbo\Stored Procedures\SPD_CourierPickUpPoint.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_AddFundReport.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_AepsReport.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_CourierPickUpPoint.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_CourierReport.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_CourierTrack.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_Dmt_Chrg.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_DmtReport.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_Eko_Aeps_Member.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_ExamLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_ExamPayType.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_ExamQuestion.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_ExamSet.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_MobileNetworkCircle.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_OrderReport.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_OTTRecharge.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_RDBankCodes.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_Services.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_TeamTree_LevelWiseList.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_TeamTree_Summary.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_UtilityPay.sql" />
+    <Build Include="dbo\Stored Procedures\SPG_VerifyFund.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_AepsApiLog.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_Cashfree_ApiLog.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_CourierOrder.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_CourierStatus.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_Eko_Aeps_Member.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_Eko_Aeps_Txn.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_FundAddRequest.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_instaSignuplog.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_MemberWallet.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_Order.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_OTTRecharge.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_PickrrApiLog.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_RDMRApiLog.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_RDMRCheckMemberType.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_RDMT_Service.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_TransferCoinToPayout.sql" />
+    <Build Include="dbo\Stored Procedures\SPI_UtilityPay.sql" />
+    <Build Include="dbo\Stored Procedures\SPIU_Commission_Distribution.sql" />
+    <Build Include="dbo\Stored Procedures\SPIU_Courier_Comm.sql" />
+    <Build Include="dbo\Stored Procedures\SPIU_CourierPickUpPoint.sql" />
+    <Build Include="dbo\Stored Procedures\SPIU_Dmt_Comm.sql" />
+    <Build Include="dbo\Stored Procedures\SPIU_Eko_Aeps_Comm.sql" />
+    <Build Include="dbo\Stored Procedures\SPIU_MemberShip_Pur_Comm.sql" />
+    <Build Include="dbo\Stored Procedures\SPIU_T_Users.sql" />
+    <Build Include="dbo\Stored Procedures\SPIUD_ExamLanguage.sql" />
+    <Build Include="dbo\Stored Procedures\SPIUD_ExamPayType.sql" />
+    <Build Include="dbo\Stored Procedures\SPIUD_ExamQuestion.sql" />
+    <Build Include="dbo\Stored Procedures\SPIUD_ExamSet.sql" />
+    <Build Include="dbo\Stored Procedures\SPR_API_Logs.sql" />
+    <Build Include="dbo\Stored Procedures\SPR_MemberWallet.sql" />
+    <Build Include="dbo\Stored Procedures\SPS_Client_Member_DashBoard.sql" />
+    <Build Include="dbo\Stored Procedures\SPS_SendAutoMail.sql" />
+    <Build Include="dbo\Stored Procedures\SPS_T_Member_Login.sql" />
+    <Build Include="dbo\Stored Procedures\SPS_User_login.sql" />
+    <Build Include="dbo\Stored Procedures\SPS_VisitingCard.sql" />
+    <Build Include="dbo\Stored Procedures\SPSAPI_ITCTC.sql" />
+    <Build Include="dbo\Stored Procedures\SPSAPI_MobileApp.sql" />
+    <Build Include="dbo\Stored Procedures\SPSI_T_MobileAppNotification_History.sql" />
+    <Build Include="dbo\Stored Procedures\SPSU_M_SystemSetting.sql" />
+    <Build Include="dbo\Stored Procedures\SPSU_T_Member.sql" />
+    <Build Include="dbo\Stored Procedures\SPU_CourierOrder.sql" />
+    <Build Include="dbo\Stored Procedures\SPU_Eko_Aeps_Member.sql" />
+    <Build Include="dbo\Stored Procedures\SPU_FundAddRequest.sql" />
+    <Build Include="dbo\Stored Procedures\SPU_Order.sql" />
+    <Build Include="dbo\Stored Procedures\SPU_OTTRecharge.sql" />
+    <Build Include="dbo\Stored Procedures\SPU_RDMT_Service.sql" />
+    <Build Include="dbo\Stored Procedures\SPU_UtilityPay.sql" />
+  </ItemGroup>
+</Project>

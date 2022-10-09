@@ -1,0 +1,83 @@
+10/3/2022 9:27:35 PM	This log contains information about the import schema operation into project 'htrecharge' on computer 'DESKTOP-S6PH4BA' by user 'hi'.
+10/3/2022 9:27:35 PM	Import of database schema has started.
+10/3/2022 9:28:01 PM	Gathering database options
+10/3/2022 9:28:01 PM	Gathering users
+10/3/2022 9:28:01 PM	Gathering roles
+10/3/2022 9:28:01 PM	Gathering application roles
+10/3/2022 9:28:01 PM	Gathering role memberships
+10/3/2022 9:28:01 PM	Gathering filegroups
+10/3/2022 9:28:01 PM	Gathering full-text catalogs
+10/3/2022 9:28:01 PM	Gathering assemblies
+10/3/2022 9:28:01 PM	Gathering certificates
+10/3/2022 9:28:01 PM	Gathering asymmetric keys
+10/3/2022 9:28:02 PM	Gathering symmetric keys
+10/3/2022 9:28:02 PM	Gathering encrypted symmetric keys
+10/3/2022 9:28:02 PM	Gathering schemas
+10/3/2022 9:28:02 PM	Gathering XML schema collections
+10/3/2022 9:28:02 PM	Gathering user-defined data types
+10/3/2022 9:28:02 PM	Gathering user-defined types
+10/3/2022 9:28:02 PM	Gathering table types
+10/3/2022 9:28:02 PM	Gathering unique keys for table types
+10/3/2022 9:28:02 PM	Gathering primary keys for table types
+10/3/2022 9:28:02 PM	Gathering indexes for table types
+10/3/2022 9:28:02 PM	Gathering check constraints for table types
+10/3/2022 9:28:02 PM	Gathering default constraints for table types
+10/3/2022 9:28:02 PM	Gathering partition functions
+10/3/2022 9:28:02 PM	Gathering partition schemes
+10/3/2022 9:28:27 PM	Gathering functions
+10/3/2022 9:28:27 PM	Gathering encrypted functions
+10/3/2022 9:28:27 PM	Gathering aggregates
+10/3/2022 9:28:27 PM	Gathering procedures
+10/3/2022 9:29:19 PM	Gathering encrypted procedures
+10/3/2022 9:29:19 PM	Gathering tables
+10/3/2022 9:29:45 PM	Gathering primary keys
+10/3/2022 9:30:10 PM	Gathering unique constraints
+10/3/2022 9:30:10 PM	Gathering foreign keys
+10/3/2022 9:30:10 PM	Gathering default constraints
+10/3/2022 9:30:10 PM	Gathering check constraints
+10/3/2022 9:30:10 PM	Gathering views
+10/3/2022 9:30:10 PM	Gathering encrypted views
+10/3/2022 9:30:11 PM	Gathering indexes
+10/3/2022 9:30:11 PM	Gathering statistics
+10/3/2022 9:30:11 PM	Gathering full-text index stoplists
+10/3/2022 9:30:11 PM	Gathering search property lists
+10/3/2022 9:30:11 PM	Gathering search properties
+10/3/2022 9:30:11 PM	Gathering full-text indexes
+10/3/2022 9:30:11 PM	Gathering column store indexes
+10/3/2022 9:30:11 PM	Gathering spatial indexes
+10/3/2022 9:30:11 PM	Gathering XML indexes
+10/3/2022 9:30:11 PM	Gathering Selective XML indexes
+10/3/2022 9:30:11 PM	Gathering encrypted triggers
+10/3/2022 9:30:11 PM	Gathering triggers
+10/3/2022 9:30:24 PM	Gathering encrypted and clr ddl triggers
+10/3/2022 9:30:24 PM	Gathering ddl triggers
+10/3/2022 9:30:24 PM	Gathering synonyms
+10/3/2022 9:30:24 PM	Gathering defaults
+10/3/2022 9:30:24 PM	Gathering data constraint uddt bindings
+10/3/2022 9:30:24 PM	Gathering rules
+10/3/2022 9:30:24 PM	Gathering data constraint uddt bindings
+10/3/2022 9:30:24 PM	Gathering message types
+10/3/2022 9:30:24 PM	Gathering queues
+10/3/2022 9:30:24 PM	Gathering contracts
+10/3/2022 9:30:24 PM	Gathering services
+10/3/2022 9:30:24 PM	Gathering event notifications
+10/3/2022 9:30:24 PM	Gathering remote service bindings
+10/3/2022 9:30:24 PM	Gathering broker priorities
+10/3/2022 9:30:24 PM	Gathering signatures
+10/3/2022 9:30:24 PM	Gathering data compression options
+10/3/2022 9:30:24 PM	Gathering sequence types
+10/3/2022 9:30:24 PM	Gathering security policies
+10/3/2022 9:30:24 PM	Gather column encryption keys
+10/3/2022 9:30:24 PM	Gathering column master keys
+10/3/2022 9:30:24 PM	Gathering external data sources
+10/3/2022 9:30:24 PM	Gathering external file formats
+10/3/2022 9:30:24 PM	Gathering external tables
+10/3/2022 9:30:24 PM	Gathering extended properties
+10/3/2022 9:30:33 PM	Gathering credentials
+10/3/2022 9:30:33 PM	Gathering logins
+10/3/2022 9:30:33 PM	Gathering server audits
+10/3/2022 9:30:36 PM	Scanning project for duplicate elements
+10/3/2022 9:30:36 PM	Finished duplicate element processing
+10/3/2022 9:30:49 PM	Finished importing database.
+10/3/2022 9:30:49 PM	A summary of the import was saved to the following location: E:\HTSM\New Work\htrecharge\htrecharge\Import Schema Logs\htrecharge_20221003035735.log
+10/3/2022 9:30:49 PM	Click Finish to continue...
